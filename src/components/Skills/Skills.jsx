@@ -2,7 +2,7 @@
 //import javascript icon react-icons
 import { DiJavascript1, DiReact, DiHtml5, DiCss3, DiBootstrap, DiSass, DiGit, DiTypescript, DiStylus } from "react-icons/di";
 
-import { SiTypescript, SiStyledcomponents, SiTailwindcss } from "react-icons/si";
+import { SiTypescript, SiStyledcomponents, SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 const features = [
   {
@@ -36,6 +36,24 @@ const features = [
     name: "Tailwind CSS",
     description: "Tailwind CSS é um framework CSS utilitário que pode ser usado para construir rapidamente interfaces de usuário.",
     icon: SiTailwindcss,
+  },
+  {
+    name: "Next JS",
+    description:
+      "Next.js é um framework React de código aberto que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React.",
+    icon: SiNextdotjs,
+  },
+  {
+    name: "Git",
+    description:
+      "Git é um sistema de controle de versão distribuído, gratuito e de código aberto, projetado para lidar com tudo, desde projetos pequenos a muito grandes com velocidade e eficiência.",
+    icon: DiGit,
+  },
+  {
+    name: "React Native",
+    description:
+      "React Native é uma biblioteca JavaScript criada pelo Facebook. É usada para desenvolver aplicativos para os sistemas Android e iOS de forma nativa.",
+    icon: DiReact,
   },
 ];
 
