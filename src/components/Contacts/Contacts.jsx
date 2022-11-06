@@ -1,20 +1,27 @@
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { ChevronRightIcon } from "@heroicons/react/solid";
 import { FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { Form } from "./Form";
+import TypewritterEf from "../Typewritter";
 
 export default function Contacts() {
   return (
     <div className="relative bg-gray-800 overflow-hidden">
       <div className="text-center mt-20">
-        <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">Contato</h2>
-        <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Entre em contato comigo</h2>
+        <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">
+          <TypewritterEf text="Contatos" />
+        </h2>
+        <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+          Entre em contato comigo
+        </h2>
         <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 z-10 relative">
-          Se você tem alguma dúvida, ou quer conversar sobre algum projeto, entre em contato comigo.
+          Se você tem alguma dúvida, ou quer conversar sobre algum projeto,
+          entre em contato comigo.
         </p>
       </div>
-      <div className="hidden sm:block sm:absolute sm:inset-0" aria-hidden="true">
+      <div
+        className="hidden sm:block sm:absolute sm:inset-0"
+        aria-hidden="true"
+      >
         <svg
           className="absolute bottom-0 right-0 transform translate-x-1/2 mb-48 text-gray-700 lg:top-0 lg:mt-28 lg:mb-0 xl:transform-none xl:translate-x-0"
           width={364}
@@ -23,11 +30,22 @@ export default function Contacts() {
           fill="none"
         >
           <defs>
-            <pattern id="eab71dd9-9d7a-47bd-8044-256344ee00d0" x={0} y={0} width={20} height={20} patternUnits="userSpaceOnUse">
+            <pattern
+              id="eab71dd9-9d7a-47bd-8044-256344ee00d0"
+              x={0}
+              y={0}
+              width={20}
+              height={20}
+              patternUnits="userSpaceOnUse"
+            >
               <rect x={0} y={0} width={4} height={4} fill="currentColor" />
             </pattern>
           </defs>
-          <rect width={364} height={384} fill="url(#eab71dd9-9d7a-47bd-8044-256344ee00d0)" />
+          <rect
+            width={364}
+            height={384}
+            fill="url(#eab71dd9-9d7a-47bd-8044-256344ee00d0)"
+          />
         </svg>
       </div>
       <div className="relative pt-6 pb-16 sm:pb-24">
@@ -44,19 +62,26 @@ export default function Contacts() {
                       Entre em contato!
                     </span>
                     <span className="ml-4 text-sm">Solicite um orçamento.</span>
-                    <ChevronRightIcon className="ml-2 w-5 h-5 text-gray-500" aria-hidden="true" />
+                    <ChevronRightIcon
+                      className="ml-2 w-5 h-5 text-gray-500"
+                      aria-hidden="true"
+                    />
                   </a>
                   <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl">
                     <span className="md:block">
-                      <span className="text-gray-300">Olá, meu nome é</span> <br />
+                      <span className="text-gray-300">Olá, meu nome é</span>{" "}
+                      <br />
                     </span>{" "}
                     <span className="text-indigo-400 md:block">
                       <span className="text-gray-300">Alexandre</span> <br />
                     </span>
                   </h1>
                   <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                    Sou desenvolvedor web e mobile, e estou aqui para te ajudar a criar o seu projeto. {""}
-                    <span className="text-blue-500">Entre em contato agora mesmo!</span>
+                    Sou desenvolvedor web e mobile, e estou aqui para te ajudar
+                    a criar o seu projeto. {""}
+                    <span className="text-blue-500">
+                      Entre em contato agora mesmo!
+                    </span>
                   </p>
                 </div>
               </div>
@@ -64,7 +89,9 @@ export default function Contacts() {
                 <div className="bg-white sm:max-w-md sm:w-full sm:mx-auto sm:rounded-lg sm:overflow-hidden">
                   <div className="px-4 py-8 sm:px-10">
                     <div>
-                      <p className="text-sm font-medium text-gray-700">Contato</p>
+                      <p className="text-sm font-medium text-gray-700">
+                        Contato
+                      </p>
 
                       <div className="mt-1 grid grid-cols-3 gap-3">
                         <div>
@@ -74,7 +101,9 @@ export default function Contacts() {
                             target="_blank"
                             rel="noreferrer"
                           >
-                            <span className="sr-only">Contato pelo Linkedin</span>
+                            <span className="sr-only">
+                              Contato pelo Linkedin
+                            </span>
                             <FaLinkedinIn size="20" />
                           </a>
                         </div>
@@ -87,7 +116,9 @@ export default function Contacts() {
                             rel="noreferrer"
                             className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
                           >
-                            <span className="sr-only">Contato pelo Whatsap</span>
+                            <span className="sr-only">
+                              Contato pelo Whatsap
+                            </span>
                             <FaWhatsapp size="20" />
                           </a>
                         </div>
@@ -107,7 +138,10 @@ export default function Contacts() {
                     </div>
 
                     <div className="mt-6 relative">
-                      <div className="absolute inset-0 flex items-center" aria-hidden="true">
+                      <div
+                        className="absolute inset-0 flex items-center"
+                        aria-hidden="true"
+                      >
                         <div className="w-full border-t border-gray-300" />
                       </div>
                       <div className="relative flex justify-center text-sm">
@@ -115,66 +149,13 @@ export default function Contacts() {
                       </div>
                     </div>
 
-                    <div className="mt-6">
-                      <form action="#" method="POST" className="space-y-6">
-                        <div>
-                          <label htmlFor="name" className="sr-only">
-                            Nome completo
-                          </label>
-                          <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            autoComplete="name"
-                            placeholder="Nome completo"
-                            required
-                            className="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-                          />
-                        </div>
-
-                        <div>
-                          <label htmlFor="mobile-or-email" className="sr-only">
-                            E-mail
-                          </label>
-                          <input
-                            type="text"
-                            name="mobile-or-email"
-                            id="mobile-or-email"
-                            autoComplete="email"
-                            placeholder="E-mail"
-                            required
-                            className="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-                          />
-                        </div>
-
-                        <div>
-                          <label htmlFor="message" className="sr-only">
-                            Sua mensagem
-                          </label>
-                          <textarea
-                            type="text"
-                            name="message"
-                            id="message"
-                            autoComplete="message"
-                            placeholder="Sua mensagem"
-                            required
-                            className="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-                          />
-                        </div>
-
-                        <div>
-                          <button
-                            type="submit"
-                            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                          >
-                            Enviar
-                          </button>
-                        </div>
-                      </form>
-                    </div>
+                    <Form />
                   </div>
                   <div className="px-4 py-6 bg-gray-50 border-t-2 border-gray-200 sm:px-10">
-                    <p className="text-xs leading-5 text-gray-500">Obrigado por entrar em contato. Em breve entrarei em contato com você.</p>
+                    <p className="text-xs leading-5 text-gray-500">
+                      Obrigado por entrar em contato. Em breve entrarei em
+                      contato com você.
+                    </p>
                   </div>
                 </div>
               </div>
