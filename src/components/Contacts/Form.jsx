@@ -15,7 +15,7 @@ export const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    const res = await fetch("http://localhost:3000/api/hello", {
+    const res = await fetch("https://alexandre-ruddy.vercel.app/api/hello", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
