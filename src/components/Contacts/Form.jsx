@@ -19,6 +19,7 @@ export const Form = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        cors: "no-cors",
       },
       body: JSON.stringify(data),
     });
