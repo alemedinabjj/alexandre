@@ -10,10 +10,10 @@ export default function Contacts() {
         <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">
           <TypewritterEf text="Contatos" />
         </h2>
-        <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+        <h2 className="text-3xl tracking-tight font-extrabold text-gray-200 sm:text-4xl">
           Entre em contato comigo
         </h2>
-        <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 z-10 relative">
+        <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-400 sm:mt-4 z-10 relative">
           Se você tem alguma dúvida, ou quer conversar sobre algum projeto,
           entre em contato comigo.
         </p>

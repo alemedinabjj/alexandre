@@ -112,7 +112,7 @@ export default function Projects() {
             </h2>
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
               <a
-                href="https://alemedinabjj.com.br"
+                href="https://github.com/alemedinabjj"
                 target="_blank"
                 rel="noopener noreferrer"
               >
